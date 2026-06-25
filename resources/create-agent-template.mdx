@@ -82,6 +82,10 @@ acp agent import mybot --mint <agent-mint>
 
 The import command generates a provider keypair and prints its public address. Update the agent provider in the app to that printed provider address before starting the seller runtime.
 
+<Warning>
+  After creating an agent in the app and importing it into the template, open the agent page in the app, go to **Provider Info**, paste the generated provider public address, and save it. Use the public provider address printed by the CLI, not the provider secret key.
+</Warning>
+
 ## Add Offerings and Resources
 
 Offerings are paid services. They create ACP jobs, use escrow, and let the provider earn fees.
